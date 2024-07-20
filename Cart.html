@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../uniqueshops css/Cart.css">
+    <link rel = "icon" href ="./../uniqueshopimages/uniqueshopslogo.png" type = "image/x-icon"> 
+    <script src="https://kit.fontawesome.com/9858cbb845.js" crossorigin="anonymous"></script>
+
+    <title>Your Cart</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html"><img src="./../uniqueshopimages/uniqueshopslogo.png" alt="RedStore" width="125px" /></a>
+          </div>
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="C:\Users\HP\Downloads\uniqueshop,com\uniqueshops html\uniqueshop.html" target="_blank">Home</a></li>
+              <li><a href="C:\Users\HP\Downloads\uniqueshop,com\uniqueshops html\product.html" target="_blank">Products</a></li>
+              <li><a href="C:\Users\HP\Downloads\uniqueshop,com\uniqueshops html\about.html" target="_blank">About</a></li>
+              <li><a href="C:\Users\HP\Downloads\uniqueshop,com\uniqueshops html\contact-us.html" target="_blank">Contact</a></li>
+              <li><a href="account.html">Account</a></li>
+            </ul>
+          </nav>
+          <a href="cart.html"><img src="https://i.ibb.co/PNjjx3y/cart.png" alt="" width="30px" height="30px" /></a>
+          <img src="./../uniqueshopimages/b2.jpg" alt="" class="menu-icon" onclick="menutoggle()" />
+        </div>
+      </div>
+      
+      <!-- cart items details -->
+      
+      <div class="small-container cart-page">
+        <table>
+          <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+          </tr>
+      
+          <tr>
+            <td>
+              <div class="cart-info">
+                <img src="./../uniqueshopimages/b1.jpg" alt="" />
+                <div>
+                  <p>Smooth & Shaving/Trimmer</p>
+                  <small>Price ₹500.00</small>
+                  <br />
+                  <a href="#">Remove</a>
+                </div>
+              </div>
+            </td>
+            <td><input type="number" value="1" /></td>
+            <td>₹500.00</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="cart-info">
+                <img src="./../uniqueshopimages/b3.jpg" alt="" />
+                <div>
+                  <p> Two in one Cleaner</p>
+                  <small>Price ₹1500.00</small>
+                  <br />
+                  <a href="#">Remove</a>
+                </div>
+              </div>
+            </td>
+            <td><input type="number" value="1" /></td>
+            <td>₹1500.00</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="cart-info">
+                <img src="./../uniqueshopimages/b4.jpg" alt="" />
+                <div>
+                  <p>Wild feed/for Cats</p>
+                  <small>Price ₹1500.00</small>
+                  <br />
+                  <a href="#">Remove</a>
+                </div>
+              </div>
+            </td>
+            <td><input type="number" value="1" /></td>
+            <td>₹1500.00</td>
+          </tr>
+        </table>
+      
+        <div class="total-price">
+          <table>
+            <tr>
+              <td>Subtotal</td>
+              <td>₹3500.00</td>
+            </tr>
+            <tr>
+              <td>Tax</td>
+              <td>₹15.00</td>
+            </tr>
+            <tr>
+              <td>Total</td>
+              <td>₹3515.00</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      
+      <!-- Footer -->
+      <footer>
+        <footer class="footer-section">
+          <div class="container">
+              <div class="footer-cta pt-5 pb-5">
+                  <div class="row">
+                      <div class="col-xl-4 col-md-4 mb-30">
+                          <div class="single-cta">
+                              <i class="fas fa-map-marker-alt"></i>
+                              <div class="cta-text">
+                                  <h4>Find us</h4>
+                                  <span>1010 Avenue, sw 54321, chandigarh</span>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-xl-4 col-md-4 mb-30">
+                          <div class="single-cta">
+                              <i class="fas fa-phone"></i>
+                              <div class="cta-text">
+                                  <h4>Call us</h4>
+                                  <span>9876543210 0</span>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-xl-4 col-md-4 mb-30">
+                          <div class="single-cta">
+                              <i class="far fa-envelope-open"></i>
+                              <div class="cta-text">
+                                  <h4>Mail us</h4>
+                                  <span>mail@info.com</span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="footer-content pt-5 pb-5">
+                  <div class="row">
+                      <div class="col-xl-4 col-lg-4 mb-50">
+                          <div class="footer-widget">
+                              <div class="footer-logo">
+                                  <a href="index.html"><img src="./../uniqueshopimages/uniqueshopslogo.png" class="img-fluid" alt="logo"></a>
+                              </div>
+                              <div class="footer-text">
+                                  <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                                  elit,Lorem ipsum dolor sit amet.</p>
+                              </div>
+                              <div class="footer-social-icon">
+                                  <span>Follow us</span>
+                                  <a href="#"><i class="fa-brands fa-facebook"></i></i></a>
+                                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                  <a href="#"><i class="fa-brands fa-google"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                          <div class="footer-widget">
+                              <div class="footer-widget-heading">
+                                  <h3>Useful Links</h3>
+                              </div>
+                              <ul>
+                                  <li><a href="#">Home</a></li>
+                                  <li><a href="#">about</a></li>
+                                  <li><a href="#">services</a></li>
+                                  <li><a href="#">portfolio</a></li>
+                                  <li><a href="#">Contact</a></li>
+                                  <li><a href="#">About us</a></li>
+                                  <li><a href="#">Our Services</a></li>
+                                  <li><a href="#">Expert Team</a></li>
+                                  <li><a href="#">Contact us</a></li>
+                                  <li><a href="#">Latest News</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                          <div class="footer-widget">
+                              <div class="footer-widget-heading">
+                                  <h3>Subscribe</h3>
+                              </div>
+                              <div class="footer-text mb-25">
+                                  <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                              </div>
+                              <div class="subscribe-form">
+                                  <form action="#">
+                                      <input type="text" placeholder="Email Address">
+                                      <button><i class="fa-brands fa-telegram"></i></button>
+                                  </form>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="copyright-area">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                          <div class="copyright-text">
+                              <p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/manishkashyap23753/">manishkashyap</a></p>
+                          </div>
+                      </div>
+                      <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                          <div class="footer-menu">
+                              <ul>
+                                  <li><a href="#">Home</a></li>
+                                  <li><a href="#">Terms</a></li>
+                                  <li><a href="#">Privacy</a></li>
+                                  <li><a href="#">Policy</a></li>
+                                  <li><a href="#">Contact</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+    
+      </footer>
+      
+      <script>
+        var MenuItems = document.getElementById('MenuItems');
+        MenuItems.style.maxHeight = '0px';
+      
+        function menutoggle() {
+          if (MenuItems.style.maxHeight == '0px') {
+            MenuItems.style.maxHeight = '200px';
+          } else {
+            MenuItems.style.maxHeight = '0px';
+          }
+        }
+      </script>
+</body>
+</html>

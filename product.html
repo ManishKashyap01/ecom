@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./../uniqueshps js/product.js"></script>
+  <link rel="stylesheet" href="./../uniqueshops css/product.css">
+  <link rel = "icon" href ="./../uniqueshopimages/uniqueshopslogo.png" type = "image/x-icon"> 
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://kit.fontawesome.com/9858cbb845.js" crossorigin="anonymous"></script>
+  <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+  <title>product</title>
+</head>
+<body>
+  <div > <p id="back-on-top"></p></div>
+  <div class="header">
+    <div class="container1">
+      <div class="navbar">
+        <div class="logo">
+          <img src="./../uniqueshopimages/uniqueshopslogo.png" width="155px">
+        </div>
+        <form class="search-container">
+          <input type="text" id="search-bar" placeholder="What can I help you with today?">
+          <a href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
+        </form>
+      
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="C:\Users\HP\Downloads\uniqueshop,com\uniqueshops html\uniqueshop.html" target="_blank">Home</a></li>
+            <li><a href="C:\Users\HP\Downloads\uniqueshop,com\uniqueshops html\product.html">Product</a></li>
+            <li><a href="C:\Users\HP\Downloads\uniqueshop,com\uniqueshops html\about.html" target="_blank">About</a></li>
+            <li><a href="C:\Users\HP\Downloads\uniqueshop,com\uniqueshops html\contact-us.html" target="_blank">Contact<a></li>
+            <li><a href="C:\Users\HP\Downloads\uniqueshop,com\uniqueshops html\account.html" target="_blank">Account</a></li>
+          </ul>
+        </nav>
+        <a href="C:\Users\HP\Downloads\uniqueshop,com\uniqueshops html\Cart.html"> 
+          <img src="https://i.postimg.cc/G20VMYzp/cart.png" width="30px" height="30px">
+        </a>
+        <!-- <img src="https://i.postimg.cc/7PR7jV0X/menu.png"> -->
+        <!-- navbar2 -->
+      </div>
+        <!-- navbar-2 -->
+        <div class="navbar2">
+          <a href="C:\Users\HP\Downloads\uniqueshop,com\uniqueshops html\order-picking.html" target="_blank">Your orders</a>
+          <div class="subnav2">
+            <button class="subnavbtn2">About <i class="fa fa-caret-down"></i></button>
+            <div class="subnav2-content">
+              <a href="C:\Users\HP\Downloads\uniqueshop,com\uniqueshops html\our-company.html" target="_blank">Company</a>
+              <a href="C:\Users\HP\Downloads\uniqueshop,com\uniqueshops html\meet-our-team.html" target="_blank">Team</a>
+              <a href="C:\Users\HP\Downloads\uniqueshop,com\uniqueshops html\career.html" target="_blank">Careers</a>
+            </div>
+          </div> 
+          <div class="subnav2">
+            <button class="subnavbtn2">Services <i class="fa fa-caret-down"></i></button>
+            <div class="subnav2-content">
+              <a href="C:\Users\HP\Downloads\uniqueshop,com\uniqueshops html\bring.html" target="_blank">Bring</a>
+              <a href="C:\Users\HP\Downloads\uniqueshop,com\uniqueshops html\delivered-successful.html" target="_blank">Deliver</a>
+              <a href="C:\Users\HP\Downloads\uniqueshop,com\uniqueshops html\pay-with-visa.html" target="_blank">Pay with visa</a>
+              <a href="C:\Users\HP\Downloads\uniqueshop,com\uniqueshops html\exclusive-services.html" target="_blank">Express</a>
+            </div>
+          </div> 
+          <div class="subnav2">
+            <button class="subnavbtn2">Categories <i class="fa fa-caret-down"></i></button>
+            <div class="subnav2-content">
+              <a href="#link1">Men's clothes  <select name="" id="">
+                <option value="t-shirts">Men's</option>
+                <option value="">T-shirts</option>
+                <option value=""> Winter's special</option>
+                <option value=""> Pents</option>
+                <option value=""> Kurta Pajama</option>
+                <option value="">Under Garmets</option>
+              </select></a>
+              <a href="#link2">Women's clothes <select name="" id="">
+                <option value="">Women's</option>
+                <option value="">Suits</option>
+                <option value="">Saree</option>
+                <option value="">top's jeans</option>
+                <option value=""></option>
+              </select> </a>
+              <a href="#link3">Home accessories</a>
+              <a href="#link4">Electronic gadgets</a>
+            </div>
+          </div>
+          <a href="C:\Users\HP\Downloads\uniqueshop,com\uniqueshops html\contact-us.html" target="_blank">Contact</a>
+          <a href="C:\Users\HP\Downloads\uniqueshop,com\uniqueshops html\account.html" target="_blank" style="float: right;"> Sign Up</a>
+        </div>
+<!-- slider -->
+      <div class="w3-content-w3-display-container">
+        <img class="mySlides" src="./../uniqueshopimages/cashback.jpg" style="width:100%">
+        <img class="mySlides" src="./../uniqueshopimages/clothes.jpg" style="width:100%">
+        <img class="mySlides" src="./../uniqueshopimages/homethings.jpg" style="width:100%">
+        <img class="mySlides" src="./../uniqueshopimages/lavamobiles.jpg" style="width:100%">
+      
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+      </div>
+      
+      <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+      
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+      
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+      }
+      </script>
+       <div class="hero">
+        <div class="hero-1">
+        </div>
+        </div>
+        <hr>
+    
+        <input type="text" class="pesquisa">
+        <p class="center-1">Today Deals</p>
+        <div class="box">
+            <div class="box-items"> <h5>Starting ₹199 | Shoes & handbags</h5><br>
+             <img src="./../uniqueshopimages/Men_low_res._SY116_CB575248862_.jpg" alt="" width="120px" height="120px" >
+          <img src="./../uniqueshopimages/Heels_low_res._SY116_CB575248862_.jpg" alt=""width="120px" height="120px" >
+        <br>
+      <img src="./../uniqueshopimages/HB_low_res._SY116_CB575250117_.jpg" alt=""  width="120px" height="120px">
+    <img src="./../uniqueshopimages/Sports_low_res._SY116_CB575250117_.jpg" alt=""  width="120px" height="120px">
+  <br> <a href="#seealloffers">See all offers</a></div>
+            <div class="box-items"><h5>Up to 70% off | Deals on Amazon Brands & more</h5>
+            <br>
+          <img src="./../uniqueshopimages/HomeD_light_QuadImageCard_1x_186x116._SY116_CB575416348_.jpg" alt="">
+        <img src="./../uniqueshopimages/HomeDecor_DryFruit_QuadImageCard_1x_186X116._SY116_CB575267810_.jpg" alt="">
+      <br>
+      <a href="#seealloffers">See all offers</a></div>
+            <div class="box-items"><h5>Starting ₹349 | Bestselling headphones</h5>
+            <img src="./../uniqueshopimages/Headphone_v2_Desktop_Cat_card_1x._SY304_CB575149386_.jpg" alt="" height="280px " width="280px">
+          <br>
+          <a href="#seealloffers">See all offers</a></div>
+            <div class="box-items">
+              <h5>Up to 80% off | Laptops, smartwatches</h5>
+              <img src="./../uniqueshopimages/R01_Cepc_Desktop_CC_1x._SY304_CB575146312_.jpg" alt="" height="280px " width="280px">
+              <br>
+              <a href="#seealloffers">See all offers</a>
+            </div>
+        </div>
+    
+        <p class="center-1">Clothes's/Apliances</p>
+        <div class="box">
+            <div class="box-items">
+              <h5>Up to 70% off | Get festive ready with products from
+              </h5><br>
+             <img src="./../uniqueshopimages/first1f.jpg" alt="" width="120px" height="120px" >
+          <img src="./../uniqueshopimages/seconf.jpg" alt=""width="120px" height="120px" >
+        <br>
+      <img src="./../uniqueshopimages/thirdf.jpg" alt=""  width="120px" height="120px">
+    <img src="./../uniqueshopimages/fourthf.jpg" alt=""  width="120px" height="120px">
+  <br> <a href="#seealloffers">See all offers</a>
+            </div>
+            <div class="box-items"><h5>Buy 2 Get 10% off, freebies</h5>
+            <br>
+            <img src="./../uniqueshopimages/bag plus bottle.jpg" alt=""  height="280px " width="280px">
+            <br>
+            <a href="#seealloffers">See all offers</a>
+          </div>
+            <div class="box-items">
+              <h5>Price crash | Lowest prices of the year | Amazon
+              </h5><br>
+             <img src="./../uniqueshopimages/b1.jpg" alt="" width="120px" height="120px" >
+          <img src="./../uniqueshopimages/b2.jpg" alt=""width="120px" height="120px" >
+        <br>
+      <img src="./../uniqueshopimages/b3.jpg" alt=""  width="120px" height="120px">
+    <img src="./../uniqueshopimages/b4.jpg" alt=""  width="120px" height="120px">
+  <br> <a href="#seealloffers">See all offers</a>
+            </div>
+            <div class="box-items"><h5>Up to 80% off | Laptops, smartwatches & headphones
+            </h5>
+          <img src="./../uniqueshopimages/tv1.jpg" alt=""  height="280px " width="280px">
+        <br>
+        <a href="#seealloffers">See all offers</a>  </div>
+        
+        </div>
+    
+        <p class="center-1">Web Series's More.</p>
+        <div class="box-det">
+            <div class="box-items"><img src="./../uniqueshopimages/hack-series.jpg" alt="" >
+            <br> <h3>Hack: Crimes online | Watch only on miniTV</h3></div>
+            <div class="box-items"><img src="./../uniqueshopimages/campus beats.jpg" alt="">
+            <br> <a href="https://www.amazon.in/minitv?_encoding=UTF8&dplnk=Y&mtv_pt=gateway&refMarker=
+            avod_in_desktop_all_na_gw_cc_btf_newminitv_AllOthers_CampusbeatsS2&pd_rd_w=bJDkr&content-id=
+            amzn1.sym.d6ca2e28-6427-49bb-8d5b-0fff90acc393&pf_rd_p=d6ca2e28-6427-49bb-8d5b-0fff90acc393&pf
+            _rd_r=7ZAFXDCM1VF5RE285ESN&pd_rd
+            _wg=Kk8QO&pd_rd_r=c15a2f77-a5d7-427b-8642-532c6911b58c&ref_=pd_gw_unk"><h3>miniTV
+              Watch more FREE content | only on miniTV</h3></a>
+          </div>
+            <!-- <div class="box-items">box 3</div> -->
+            <div class="box-items"> <img src="./../uniqueshopimages/huggies.jpg" alt="" width="300px" height="300px"> <br>
+            <h3>  Diapers & wipes | Starting ₹99</h3></div>
+        </div>
+    
+        <p class="center-1">Best Deals For Protiens Bags</p>
+        <div class="box">
+            <div class="box-items"><img src="./../uniqueshopimages/protiein1.jpg" alt="">
+            <br><p>Nutrabay Pure Micronised Creatine Monohydrate Powder, (100g, Unflavoured),</p>
+          <br><div class="stars-1">
+            <i class="fa-sharp fa-solid fa-star" style="color: #757526;"></i>
+            <i class="fa-sharp fa-solid fa-star" style="color:#757526;;"></i>
+            <i class="fa-sharp fa-solid fa-star" style="color: #757526;;"></i>
+            <i class="fa-sharp fa-solid fa-star" style="color: #757526;;"></i>
+            <i class="fa-sharp fa-solid fa-star" style="color: #220b3f;"></i>19,715
+          </div>
+          <br>
+          <div class="best-deals">
+           <p>30% off.. <div class="nut-R">(₹299.00/100 g)</div> </p>
+          </div>
+          <br>
+       
+        </div>
+            <div class="box-items"><img src="./../uniqueshopimages/protien2.jpg" alt="">
+            <br><p>Labrada CreaLean Powder | 3g Creatine Monohydrate,For 83 Servings, 0.55 lbs (250 gm), Unflavoured |Post Workout,</p>
+            <br><div class="stars-1">
+              <i class="fa-sharp fa-solid fa-star" style="color: #757526;"></i>
+              <i class="fa-sharp fa-solid fa-star" style="color:#757526;;"></i>
+              <i class="fa-sharp fa-solid fa-star" style="color: #757526;;"></i>
+              <i class="fa-sharp fa-solid fa-star" style="color: #757526;;"></i>
+              <i class="fa-sharp fa-solid fa-star" style="color: #220b3f;"></i>1,174
+            </div>
+            <div class="nut-R"><p>₹755.00 (₹302.00/100 g)<br>FREE Delivery over ₹499. <br> Fulfilled by uniqueshop.</p></div>
+           
+            
+          </div>
+            <div class="box-items"><img src="./../uniqueshopimages/protien 3.jpg" alt="">
+            <br><p>Optimum Nutrition (ON) Serious Mass High Protein High Calorie Weight Gainer Powder - 1 kg (Chocolate)</p>
+            <br>
+            <div class="stars-1">
+              <i class="fa-sharp fa-solid fa-star" style="color: #757526;"></i>
+              <i class="fa-sharp fa-solid fa-star" style="color:#757526;;"></i>
+              <i class="fa-sharp fa-solid fa-star" style="color: #757526;;"></i>
+              <i class="fa-sharp fa-solid fa-star" style="color: #757526;;"></i>
+              <i class="fa-sharp fa-solid fa-star" style="color: #220b3f;"></i>3,769
+            </div>
+            <div class="nut-R"><p>₹899.00 (₹89.90/100 g) <br>FREE Delivery over ₹499. <br> Fulfilled by uniqueshop.</p></div>
+          </div>
+            <div class="box-items"><img src="./../uniqueshopimages/protien4.jpg" alt="">
+            <br><p>Healthvit Fitness Micronized Creatine Monohydrate Powder |creatine supplement | Enhanced Performance  |</p>
+            <br><div class="stars-1">
+              <i class="fa-sharp fa-solid fa-star" style="color: #757526;"></i>
+              <i class="fa-sharp fa-solid fa-star" style="color:#757526;;"></i>
+              <i class="fa-sharp fa-solid fa-star" style="color: #757526;;"></i>
+              <i class="fa-sharp fa-solid fa-star" style="color: #757526;;"></i>
+              <i class="fa-sharp fa-solid fa-star" style="color: #220b3f;"></i>5,558
+            </div>
+            <div class="nut-R"><p>1,049.00 (₹104.90/100 g) <br>FREE Delivery over ₹499. <br> Fulfilled by uniqueshop.</p></div>
+          </div>
+        </div>
+    
+      <div class="scroll-container">
+        <img src="./../uniqueshopimages/p1.jpg" alt="Cinque Terre" width="200" height="200">
+        <img src="./../uniqueshopimages/p2.jpg" alt="Forest" width="200" height="200">
+        <img src="./../uniqueshopimages/p3.jpg" alt="Northern Lights" width="200" height="200">
+        <img src="./../uniqueshopimages/p4.jpg" alt="Mountains" width="200" height="200">
+        <img src="./../uniqueshopimages/p5.jpg" alt="Mountains" width="200" height="200">
+        <img src="./../uniqueshopimages/p7.jpg" alt="Mountains" width="100" height="200">
+        <img src="./../uniqueshopimages/p8.jpg" alt="Mountains" width="200" height="200">
+        <img src="./../uniqueshopimages/p9.jpg" alt="Mountains" width="200" height="200">
+        <img src="./../uniqueshopimages/p11.jpg" alt="Mountains" width="200" height="200">
+      </div>
+      <div class="signin">
+        <h2>Sign in for your best experience</h2>
+        <button type="button"><a href="C:\Users\HP\Downloads\uniqueshop,com\uniqueshops html\account.html">Sign in securely</a> </button>
+      </div>
+      <div class="train-booking">
+        <img src="./../uniqueshopimages/Train_GW_editorial_2300x646._CB575359240_.jpg" alt="train booking">
+      </div>
+      <!-- <script>
+        window.alert('this page is created by manish')
+      </script> -->
+
+  <div class="slider">
+    <div class="slide">
+      <img src="./../uniqueshopimages/iphone13.jpg" alt="Image 1">
+      <img src="./../uniqueshopimages/redmi 12c.jpg" alt="Image 2">
+      <img src="./../uniqueshopimages/realme narzo n53.jpg" alt="Image 3">
+      <img src="./../uniqueshopimages/oneplus nord ce3 5g.jpg" alt="Image 3">
+      <img src="./../uniqueshopimages/realme narzo 60.jpg" alt="Image 3">
+      <img src="./../uniqueshopimages/oneplus nord ce3 5g.jpg" alt="Image 3">
+      <img src="./../uniqueshopimages/redmi 12 5g.jpg" alt="Image 3">
+      <img src="./../uniqueshopimages/redmi 12c.jpg" alt="Image 3">
+      <img src="./../uniqueshopimages/samsun galaxy m34.jpg" alt="Image 3">
+      <img src="./../uniqueshopimages/samsung galaxy m14.jpg" alt="Image 3">
+    </div>
+
+  </div>
+  <div class="back-on-top">
+    <a href="#back-on-top"> Back on top</a>
+  </div>
+  <!-- footer -->
+  <footer>
+    <footer class="footer-section">
+      <div class="container">
+          <div class="footer-cta pt-5 pb-5">
+              <div class="row">
+                  <div class="col-xl-4 col-md-4 mb-30">
+                      <div class="single-cta">
+                          <i class="fas fa-map-marker-alt"></i>
+                          <div class="cta-text">
+                              <h4>Find us</h4>
+                              <span>1010 Avenue, sw 54321, chandigarh</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xl-4 col-md-4 mb-30">
+                      <div class="single-cta">
+                          <i class="fas fa-phone"></i>
+                          <div class="cta-text">
+                              <h4>Call us</h4>
+                              <span><a href="tel:+918930581681" style="text-decoration: none; color: white;" >8930581681</a></span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xl-4 col-md-4 mb-30">
+                      <div class="single-cta">
+                          <i class="far fa-envelope-open"></i>
+                          <div class="cta-text">
+                              <h4>Mail us</h4>
+                              <span><a href="mailto:manishkashyap23753@gmail.com" style="text-decoration: none;color:white ;">manishkashyap23753@gmail.com</a></span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="footer-content pt-5 pb-5">
+              <div class="row">
+                  <div class="col-xl-4 col-lg-4 mb-50">
+                      <div class="footer-widget">
+                          <div class="footer-logo">
+                              <a href="index.html"><img src="./../uniqueshopimages/uniqueshopslogo.png" class="img-fluid" alt="logo"></a>
+                          </div>
+                          <div class="footer-text">
+                            <p>If you are were really like our services or getting any other information about us then you can follow us our page and contact us on this contact details that can mention below.</p>
+                          </div>
+                          <div class="footer-social-icon">
+                              <span>Follow us</span>
+                              <a href="#"><i class="fa-brands fa-facebook"></i></i></a>
+                              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                              <a href="#"><i class="fa-brands fa-google"></i></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                      <div class="footer-widget">
+                          <div class="footer-widget-heading">
+                              <h3>Useful Links</h3>
+                          </div>
+                          <ul>
+                            <li><a href="C:\Users\HP\Downloads\uniqueshop,com\uniqueshops html\uniqueshop.html">Home</a></li>
+                            <li><a href="C:\Users\HP\Downloads\uniqueshop,com\uniqueshops html\about.html" target="_blank">about</a></li>
+                            <li><a href="C:\Users\HP\Downloads\uniqueshop,com\uniqueshops html\exclusive-services.html" target="_blank">services</a></li>
+                            <li><a href="F:\new portifolio by mk\manishkportifolio.html" target="_blank">portfolio</a></li>
+                            <li><a href="C:\Users\HP\Downloads\uniqueshop,com\uniqueshops html\contact-us.html" target="_blank" >Contact</a></li>
+                            <li><a href="C:\Users\HP\Downloads\uniqueshop,com\uniqueshops html\about.html" target="_blank">About us</a></li>
+                            <li><a href="C:\Users\HP\Downloads\uniqueshop,com\uniqueshops html\exclusive-services.html" target="_blank">Our Services</a></li>
+                            <li><a href="C:\Users\HP\Downloads\uniqueshop,com\uniqueshops html\meet-our-team.html" target="_blank">Expert Team</a></li>
+                            <li><a href="C:\Users\HP\Downloads\uniqueshop,com\uniqueshops html\contact-us.html" target="_blank">Contact us</a></li>
+                            <li><a href="C:\Users\HP\Downloads\uniqueshop,com\uniqueshops html\bring.html" target="_blank">Latest News</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                      <div class="footer-widget">
+                          <div class="footer-widget-heading">
+                              <h3>Subscribe</h3>
+                          </div>
+                          <div class="footer-text mb-25">
+                              <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                          </div>
+                          <div class="subscribe-form">
+                              <form action="#">
+                                  <input type="text" placeholder="Email Address">
+                                  <button><i class="fa-brands fa-telegram"></i></button>
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="copyright-area">
+          <div class="container">
+              <div class="row">
+                  <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                      <div class="copyright-text">
+                          <p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/manishkashyap23753/">manishkashyap</a></p>
+                      </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                      <div class="footer-menu">
+                          <ul>
+                              <li><a href="#">Home</a></li>
+                              <li><a href="#">Terms</a></li>
+                              <li><a href="#">Privacy</a></li>
+                              <li><a href="#">Policy</a></li>
+                              <li><a href="#">Contact</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+  </footer>
+</body>
+</html>
